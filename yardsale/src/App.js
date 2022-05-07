@@ -11,7 +11,12 @@ function App() {
     return (
       <div class="container">
         <img src={require('./assets/realPic' + id + '.JPG')}/>
-        <p className="itemID">{id}</p>
+        <div class="itemID">
+          <label class="container">{id}
+            <input type="checkbox"/>
+            <span class="checkmark"></span>
+          </label>
+        </div>
         <p class="itemID">{descriptions.Descriptions[id - 1].description}</p>
       </div>);
   }
